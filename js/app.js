@@ -1,8 +1,9 @@
 const container = document.getElementById('container');
 const btnAdd = document.querySelector('.btn-add');
 const count = Math.floor(Math.random() * 10) + 1;
-const arrayFilter = [-1, 0, 1, 2, 3, 4, 5];
-const arraySizeSnow = [10, 15, 20, 25, 30, 35, 40 ,45 ,50];
+const arrayFilter = [0, 1, 2, 3, 4, 5];
+const arraySizeSnow = [10, 15, 20, 25, 30, 35, 40];
+
 
 // When click the button
 btnAdd.addEventListener('click', function () {
@@ -14,7 +15,9 @@ btnAdd.addEventListener('click', function () {
     div.classList.add('snow');
     div.style.left = leftSnow + 'px';
     div.style.backdropFilter = filer + 'px'; 
-    div.style.width = div.style.height = sizeSnow +'px';
+    div.style.height = sizeSnow * 2 + 'px';
+    div.style.width = sizeSnow +'px';
+
     container.append(div);
 });
 
@@ -28,7 +31,8 @@ for (let i = 0; i < count; i++) {
     div.classList.add('snow');
     div.style.left = leftSnow + 'px';
     div.style.backdropFilter = filer + 'px'; 
-    div.style.width = div.style.height = sizeSnow +'px';
+    div.style.height = sizeSnow * 2 + 'px';
+    div.style.width = sizeSnow +'px';
 
     container.append(div);
 } 

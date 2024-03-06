@@ -20,19 +20,20 @@ body {
     position: absolute;
     top: 0;
     left: 50px;
-    height: 100px;
-    width: 100px;
     animation: rotatesnow 10s linear infinite, move 10s linear infinite;
 }
 
 .flower-snow {
     position: absolute;
     top: calc(100% - 25%); 
-    left: 0;
+    left: calc(100% - 75%);
+    /* background-color: #fff; */
     background-image: url(../image/snowflake.png);
     background-size: cover;
-    height: 100%;
-    width: 100%;
+    border-radius: 50%;
+    height: 25%;
+    width: 50%;
+    
 }
 
     .btn-add {
@@ -65,26 +66,27 @@ body {
 
 @keyframes rotatesnow {
     0% {
-        transform: rotate(-30deg);
+        transform: rotate(-40deg);
     }
     20% {
-        transform: rotate(30deg);
+        transform: rotate(40deg);
+
 
     }
     40% {
-        transform: rotate(-30deg);
+        transform: rotate(-40deg);
 
     }
     60% {
-        transform: rotate(30deg);
+        transform: rotate(40deg);
         
     }
     80% {
-        transform: rotate(-30deg);
+        transform: rotate(-40deg);
 
     }
     100% {
-        transform: rotate(20deg);
+        transform: rotate(40deg);
 
     }
 }
@@ -92,7 +94,7 @@ body {
 
 @keyframes move {
     0% {
-        top: -10%;
+        top: -20%;
     }
     100% {
         top: 100%;
