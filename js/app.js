@@ -37,21 +37,9 @@ for (let i = 0; i < count; i++) {
     container.append(div);
 }
 
-let temp = 0;
 btnPause.addEventListener('click', function () {
     let arraySnow = document.querySelectorAll('.snow');
-    if (temp == 0) {
-        arraySnow.forEach(element => {
-            element.style.animationIterationCount='unset';
-        });
-        temp = 1;
-    }
-    else {
-        arraySnow.forEach(element => {
-            element.style.animationIterationCount='infinite';
-        });
-        temp = 0;
-    }
-
-
+    arraySnow.forEach(element => {
+        element.parentNode.removeChild(element);
+    });  
 });

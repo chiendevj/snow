@@ -18,8 +18,6 @@ body {
 
 .snow {
     position: absolute;
-    top: -100%;
-    left: 50px;
     animation: rotatesnow 10s linear infinite, move 10s linear infinite;
 }
 
