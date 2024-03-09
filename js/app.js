@@ -3,7 +3,7 @@ const btnAdd = document.querySelector('.btn-add');
 const count = Math.floor(Math.random() * 10) + 1;
 const arrayFilter = [0, 1, 2, 3, 4, 5];
 const arraySizeSnow = [10, 15, 20, 25, 30, 35, 40];
-const btnPause = document.querySelector('.btn-pause');
+const btnClear = document.querySelector('.btn-clear');
 
 // When click the button
 btnAdd.addEventListener('click', function () {
@@ -37,7 +37,7 @@ for (let i = 0; i < count; i++) {
     container.append(div);
 }
 
-btnPause.addEventListener('click', function () {
+btnClear.addEventListener('click', function () {
     let arraySnow = document.querySelectorAll('.snow');
     arraySnow.forEach(element => {
         element.parentNode.removeChild(element);
