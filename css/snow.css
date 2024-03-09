@@ -61,7 +61,7 @@ body {
     transform: scale(0.9);
 }
 
-.btn-pause {
+.btn-clear {
     width: 100px;
     height: 50px;
     position: fixed;
@@ -78,7 +78,7 @@ body {
 
 }
 
-.btn-pause::before {
+.btn-clear::before {
     position: absolute;
     content: '';
     top: 0;
@@ -91,15 +91,15 @@ body {
     z-index: -1;
 }
 
-.btn-pause:hover::before {
+.btn-clear:hover::before {
     width: 200px;
 }
 
-.btn-pause:hover {
+.btn-clear:hover {
     cursor: pointer;
 }
 
-.btn-pause:active {
+.btn-clear:active {
     transform: scale(0.9);
 }
 
